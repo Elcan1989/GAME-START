@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background: #2b2d42;
+  background: #1f2937;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -75,16 +75,20 @@ nav ul li a.active {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.grid-img {
+.video-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
+  margin-top: 20px;
 }
 
-.grid-img img {
-  width: 300px;
-  border-radius: 5px;
+#rating span {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+#rating span.active {
+  color: gold;
 }
 
 form {
@@ -101,31 +105,57 @@ input, textarea, button {
 }
 
 button {
-  background: #2b2d42;
+  background: #1f2937;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1a1c2d;
+  background: #374151;
+}
+
+#comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+#comment-list li {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: left;
 }
 
 footer {
-  background: #2b2d42;
+  background: #1f2937;
   color: white;
   text-align: center;
   padding: 10px;
   margin-top: 30px;
 }
 
-/* 手機版自適應 */
+/* 浮動按鈕 */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ef233c;
+  color: white;
+  padding: 15px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+/* 手機版 */
 @media (max-width: 768px) {
   .grid {
     flex-direction: column;
     align-items: center;
   }
-  .grid-img img {
+  .video-container iframe {
     width: 90%;
   }
 }
