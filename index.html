@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>魔幻世界大冒險 - 官方網站</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- 導覽列 -->
@@ -30,60 +30,34 @@
     <h2>📰 最新公告</h2>
     <div class="news-preview">
       <p>📢 <strong>8月更新：</strong>全新 Boss「黑暗巨龍」即將降臨！</p>
-      <p>📢 <strong>活動進行中：</strong>夏日限定副本「冰霜傳說」開放中，快來挑戰！</p>
+      <p>📢 <strong>活動進行中：</strong>夏日限定副本開放中，快來挑戰！</p>
       <a href="news.html" class="btn">查看更多消息</a>
     </div>
   </section>
 
-<!-- 角色簡介 -->
-<section class="content">
-  <h2>🎭 角色簡介</h2>
-  <div class="character-container">
-    <!-- 角色 1 -->
-    <div class="character-card" data-name="勇者艾倫" data-story="勇者艾倫是王國最年輕的劍士，年僅18歲便獲得傳說之劍的認可。他曾獨自擊退一群魔物軍隊，保護村莊免於毀滅。">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>勇者艾倫</h3>
-          <p>手持傳說之劍的冒險家。</p>
-        </div>
-        <div class="card-back">
-          <h3>主要技能</h3>
-          <p>⚔️ 劍術連擊<br>🛡️ 防禦格擋<br>💥 破空斬</p>
-        </div>
+   <!-- 角色簡介 -->
+  <section class="content">
+    <h2>🎭 角色簡介</h2>
+    <div class="character-container">
+      <div class="character-card" data-name="勇者艾倫" data-story="勇者艾倫是王國最年輕的劍士，年僅18歲便獲得傳說之劍的認可。他曾獨自擊退一群魔物軍隊，保護村莊免於毀滅。">
+        <img src="https://via.placeholder.com/200x200?text=勇者" alt="勇者">
+        <h3>勇者艾倫</h3>
+        <p>手持傳說之劍的冒險家，擁有強大的劍術與勇氣。</p>
+      </div>
+      <div class="character-card" data-name="魔導士莉亞" data-story="莉亞出生於古老魔法家族，自幼展現強大魔力。她能操控火焰、冰霜和雷電，是隊伍中不可或缺的法術核心。">
+        <img src="https://via.placeholder.com/200x200?text=法師" alt="法師">
+        <h3>魔法師莉亞</h3>
+        <p>精通元素魔法，能以火焰與冰霜支援隊伍。</p>
+      </div>
+      <div class="character-card" data-name="神射手凱爾" data-story="凱爾曾是王國的獵人首領，箭術百發百中。他曾在戰場上一箭射下飛龍，被譽為“天空之矢”。">
+        <img src="https://via.placeholder.com/200x200?text=弓箭手" alt="弓箭手">
+        <h3>神射手凱爾</h3>
+        <p>遠程輸出專家，箭術精準無比，能給予敵人致命一擊。</p>
       </div>
     </div>
+  </section>
 
-    <!-- 角色 2 -->
-    <div class="character-card" data-name="魔法師莉亞" data-story="莉亞出生於古老魔法家族，自幼展現強大魔力。她能操控火焰、冰霜和雷電，是隊伍中不可或缺的法術核心。">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>魔法師莉亞</h3>
-          <p>精通元素魔法的高階法師。</p>
-        </div>
-        <div class="card-back">
-          <h3>主要技能</h3>
-          <p>🔥 火焰風暴<br>❄️ 冰霜結界<br>⚡ 雷擊術</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 角色 3 -->
-    <div class="character-card" data-name="神射手凱爾" data-story="凱爾曾是王國的獵人首領，箭術百發百中。他曾在戰場上一箭射下飛龍，被譽為“天空之矢”。">
-      <div class="card-inner">
-        <div class="card-front">
-          <h3>神射手凱爾</h3>
-          <p>箭術精準無比的遠程狙擊手。</p>
-        </div>
-        <div class="card-back">
-          <h3>主要技能</h3>
-          <p>🏹 連環射擊<br>🎯 穿透箭矢<br>🐉 龍狩之矢</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- 聯絡我們 -->
+  <!-- 聯絡資訊 (只留社群連結) -->
   <section id="contact" class="content">
     <h2>📩 聯絡我們</h2>
     <div class="social-links">
@@ -91,64 +65,20 @@
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
       <a href="https://discord.com" target="_blank">Discord</a>
     </div>
-    <form onsubmit="sendMessage(event)">
-      <input type="text" id="name" placeholder="你的名字" required>
-      <input type="email" id="email" placeholder="你的 Email" required>
-      <textarea id="message" placeholder="留言內容" required></textarea>
-      <button type="submit">送出</button>
-    </form>
-    <p id="status"></p>
   </section>
 
-  <!-- Modal 彈出視窗 -->
-  <div id="characterModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2 id="modalName"></h2>
-      <p id="modalStory"></p>
-    </div>
-  </div>
+  <!-- 頁尾 -->
+  <footer>
+    <p>© 2025 未來遊戲開發團隊</p>
+    <p>目前版本：<strong>1.0.1</strong>（新增角色）</p>
+    <p>📜 歷代版本紀錄：</p>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>🔹 版本 1.0 - 創造網頁</li>
+      <li>🔹 版本 1.0.1 - 增加角色</li>
+    </ul>
+  </footer>
 
-<!-- 頁尾 -->
-<footer>
-  <p>© 2025 未來遊戲開發團隊 | 版本 1.0.1</p>
-  <h4>📜 歷代版本</h4>
-  <ul style="list-style: none; padding: 0; margin: 0;">
-    <li>🔹 版本 1.0.1 - 增加角色簡介、發光特效</li>
-    <li>🔹 版本 1.0 - 創造網站初始版本</li>
-  </ul>
-</footer>
-
-  <script>
-    // 送出留言
-    function sendMessage(event) {
-      event.preventDefault();
-      document.getElementById("status").textContent = "✅ 你的訊息已送出！（示範功能）";
-    }
-
-    // Modal 功能
-    const modal = document.getElementById("characterModal");
-    const modalName = document.getElementById("modalName");
-    const modalStory = document.getElementById("modalStory");
-    const closeBtn = document.querySelector(".close-btn");
-
-    document.querySelectorAll(".character-card").forEach(card => {
-      card.addEventListener("click", () => {
-        modalName.textContent = card.dataset.name;
-        modalStory.textContent = card.dataset.story;
-        modal.style.display = "block";
-      });
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
-
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
