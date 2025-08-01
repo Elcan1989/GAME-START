@@ -117,16 +117,7 @@ footer {
   text-decoration: none;
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
-}
 
 .social-links {
   margin: 10px 0;
-}
-
-.map-container {
-  margin-top: 10px;
-  border-radius: 8px;
-  overflow: hidden;
 }
