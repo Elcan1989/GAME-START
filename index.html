@@ -11,59 +11,28 @@
   <nav>
     <h2 class="logo">GameWorld</h2>
     <ul>
-      <li><a href="#home" class="active">首頁</a></li>
-      <li><a href="#features">特色</a></li>
-      <li><a href="#reviews">玩家評價</a></li>
+      <li><a href="index.html" class="active">首頁</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="dlc.html">DLC 更新</a></li>
       <li><a href="#contact">聯絡我們</a></li>
     </ul>
   </nav>
 
   <!-- 封面區 -->
-  <header id="home" class="hero">
+  <header class="hero">
     <h1>⚔️ 魔幻世界大冒險</h1>
     <p>探索未知、挑戰魔物，展開屬於你的傳奇旅程！</p>
     <a href="#" class="btn">立即下載</a>
   </header>
 
-  <!-- 特色介紹 -->
-  <section id="features" class="content">
-    <h2>🎮 遊戲特色</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>🌍 開放世界</h3>
-        <p>自由探索多樣地圖，發現隱藏的寶藏與秘密。</p>
-      </div>
-      <div class="card">
-        <h3>⚔️ 史詩戰鬥</h3>
-        <p>挑戰強大 BOSS，收集傳說級武器裝備。</p>
-      </div>
-      <div class="card">
-        <h3>🛡️ 多種職業</h3>
-        <p>成為戰士、法師或弓箭手，打造專屬角色。</p>
-      </div>
+  <!-- 最新公告簡短預覽 -->
+  <section class="content">
+    <h2>📰 最新公告</h2>
+    <div class="news-preview">
+      <p>📢 <strong>8月更新：</strong>全新 Boss「黑暗巨龍」即將降臨！</p>
+      <p>📢 <strong>活動進行中：</strong>夏日限定副本開放中，快來挑戰！</p>
+      <a href="news.html" class="btn">查看更多消息</a>
     </div>
-  </section>
-
-
-  <!-- 玩家評價 -->
-  <section id="reviews" class="content">
-    <h2>⭐ 玩家評價</h2>
-    <div id="rating">
-      <span onclick="rate(1)">★</span>
-      <span onclick="rate(2)">★</span>
-      <span onclick="rate(3)">★</span>
-      <span onclick="rate(4)">★</span>
-      <span onclick="rate(5)">★</span>
-    </div>
-    <p id="rating-text">請為遊戲評分</p>
-
-    <h3>💬 玩家留言</h3>
-    <form onsubmit="addComment(event)">
-      <input type="text" id="username" placeholder="你的名字" required>
-      <textarea id="comment" placeholder="留下你的評語..." required></textarea>
-      <button type="submit">送出留言</button>
-    </form>
-    <ul id="comment-list"></ul>
   </section>
 
   <!-- 聯絡資訊 -->
@@ -79,13 +48,8 @@
   </section>
 
   <footer>
-    <p>© 2025 GameWorld</p>
-    <p>1.0 創造網頁</p>
+    <p>© 2025 GameWorld | Powered by GitHub Pages</p>
   </footer>
-
-  <!-- 浮動按鈕 -->
-  <a href="#" class="floating-btn">⬇ 立即下載</a>
-
   <script src="script.js"></script>
 </body>
 </html>
