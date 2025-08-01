@@ -35,11 +35,15 @@
     </div>
   </section>
 
-  <!-- 聯絡資訊 -->
+  <!-- 聯絡我們 -->
   <section id="contact" class="content">
     <h2>📩 聯絡我們</h2>
 
-
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://discord.com" target="_blank">Discord</a>
+    </div>
 
     <form onsubmit="sendMessage(event)">
       <input type="text" id="name" placeholder="你的名字" required>
@@ -50,16 +54,16 @@
     <p id="status"></p>
   </section>
 
-<footer>
-  <div class="footer-links">
-    <a href="https://facebook.com" target="_blank">Facebook</a> |
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-    <a href="https://discord.com" target="_blank">Discord</a>
-  </div>
-  <p>© 2025 未來遊戲開發團隊 | 版本 1.0 創造網頁</p>
-</footer>
+  <!-- 頁尾 -->
+  <footer>
+    <p>© 2025 未來遊戲開發團隊 | 版本 1.0 創造網頁</p>
+  </footer>
 
-
-  <script src="script.js"></script>
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+      document.getElementById("status").textContent = "✅ 你的訊息已送出！（示範功能）";
+    }
+  </script>
 </body>
 </html>
