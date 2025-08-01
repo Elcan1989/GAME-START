@@ -274,8 +274,8 @@ footer {
 }
 
 .card-back {
-  background: #1f2937;
-  color: #FFD700;
+  background: #0a3d62;
+  color: #f0f0f0;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
