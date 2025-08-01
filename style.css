@@ -201,7 +201,9 @@ footer {
 
 .character-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(239, 35, 60, 0.6), 
+              0 0 15px rgba(239, 35, 60, 0.8);
+  border: 2px solid #ef233c;
 }
 
 /* Modal 彈出視窗 */
