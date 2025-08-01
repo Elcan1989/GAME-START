@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的遊戲介紹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav>
+    <h2 class="logo">GameWorld</h2>
+    <ul>
+      <li><a href="#home" class="active">首頁</a></li>
+      <li><a href="#features">遊戲特色</a></li>
+      <li><a href="#screenshots">遊戲截圖</a></li>
+      <li><a href="#contact">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+  <!-- 封面區 -->
+  <header id="home" class="hero">
+    <h1>⚔️ 魔幻世界大冒險</h1>
+    <p>探索未知、擊敗魔物，展開你的英雄旅程！</p>
+    <a href="#" class="btn">立即下載</a>
+  </header>
+
+  <!-- 特色介紹 -->
+  <section id="features" class="content">
+    <h2>🎮 遊戲特色</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🌍 開放世界</h3>
+        <p>無限探索，體驗沉浸式地圖場景。</p>
+      </div>
+      <div class="card">
+        <h3>⚔️ 戰鬥系統</h3>
+        <p>挑戰強大的魔物，收集稀有裝備。</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ 多樣職業</h3>
+        <p>戰士、法師、弓箭手，打造你的英雄角色。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 遊戲截圖 -->
+  <section id="screenshots" class="content">
+    <h2>📸 遊戲截圖</h2>
+    <div class="grid-img">
+      <img src="https://via.placeholder.com/400x250?text=截圖1" alt="Screenshot 1">
+      <img src="https://via.placeholder.com/400x250?text=截圖2" alt="Screenshot 2">
+      <img src="https://via.placeholder.com/400x250?text=截圖3" alt="Screenshot 3">
+    </div>
+  </section>
+
+  <!-- 聯絡資訊 -->
+  <section id="contact" class="content">
+    <h2>📩 聯絡我們</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="你的名字" required>
+      <input type="email" id="email" placeholder="你的 Email" required>
+      <textarea id="message" placeholder="留言內容" required></textarea>
+      <button type="submit">送出</button>
+    </form>
+    <p id="status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 GameWorld | Powered by GitHub Pages</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
