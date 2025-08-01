@@ -5,6 +5,7 @@ body {
   color: #333;
 }
 
+/* 導覽列 */
 nav {
   background: #1f2937;
   padding: 10px 20px;
@@ -15,6 +16,8 @@ nav {
 
 nav .logo {
   color: white;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -31,12 +34,18 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ef233c;
 }
 
 nav ul li a.active {
   text-decoration: underline;
 }
 
+/* 封面區 */
 .hero {
   background: url('https://via.placeholder.com/1200x500?text=遊戲封面') center/cover no-repeat;
   padding: 150px 20px;
@@ -53,8 +62,14 @@ nav ul li a.active {
   border-radius: 5px;
   display: inline-block;
   margin-top: 20px;
+  transition: background 0.3s ease;
 }
 
+.btn:hover {
+  background: #d90429;
+}
+
+/* 主要內容區 */
 .content {
   padding: 40px 20px;
   text-align: center;
@@ -70,11 +85,26 @@ nav ul li a.active {
   text-align: left;
 }
 
+/* 聯絡區塊 */
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* 聯絡表單 */
 form {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 260px;
   max-width: 400px;
-  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 input, textarea, button {
@@ -88,12 +118,36 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 button:hover {
   background: #374151;
 }
 
+/* 社群連結 */
+.social-links {
+  margin: 10px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 8px;
+  color: #1f2937;
+  font-weight: bold;
+  text-decoration: none;
+  background: #e5e5e5;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #ef233c;
+  color: white;
+}
+
+/* 頁尾 */
 footer {
   background: #1f2937;
   color: white;
@@ -102,22 +156,11 @@ footer {
   margin-top: 30px;
 }
 
-.contact-info {
-  background: #fff;
-  padding: 20px;
-  max-width: 500px;
-  margin: 10px auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: left;
+/* 響應式 */
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.contact-info a {
-  color: #ef233c;
-  text-decoration: none;
-}
-
-
-.social-links {
-  margin: 10px 0;
-}
