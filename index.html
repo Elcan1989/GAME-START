@@ -13,7 +13,7 @@
     <ul>
       <li><a href="index.html" class="active">首頁</a></li>
       <li><a href="news.html">最新消息</a></li>
-      <li><a href="dlc.html">更新</a></li>
+      <li><a href="dlc.html">DLC 更新</a></li>
       <li><a href="#contact">聯絡我們</a></li>
     </ul>
   </nav>
@@ -38,6 +38,26 @@
   <!-- 聯絡資訊 -->
   <section id="contact" class="content">
     <h2>📩 聯絡我們</h2>
+
+    <div class="contact-info">
+      <p>📧 Email：<a href="mailto:support@gameworld.com">support@gameworld.com</a></p>
+      <p>📞 電話：+886 2 1234 5678</p>
+      <p>🏢 地址：台北市中山區中正路 100 號</p>
+
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">🌐 Facebook</a> |
+        <a href="https://twitter.com" target="_blank">🐦 Twitter</a> |
+        <a href="https://discord.com" target="_blank">💬 Discord</a>
+      </div>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.909293037074!2d120.982!3d25.045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1szh-TW!2stw!4v1234567890"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
     <form onsubmit="sendMessage(event)">
       <input type="text" id="name" placeholder="你的名字" required>
       <input type="email" id="email" placeholder="你的 Email" required>
@@ -48,10 +68,12 @@
   </section>
 
   <footer>
-    <p>© 2025 遊戲開發團隊</p>
-    <p>版本</p>
-    <p>1.0 創造網頁</p>
+    <p>© 2025 GameWorld | Powered by GitHub Pages</p>
   </footer>
+
+  <!-- 浮動下載按鈕 -->
+  <a href="#" class="download-btn">⬇ 立即下載</a>
+
   <script src="script.js"></script>
 </body>
 </html>
