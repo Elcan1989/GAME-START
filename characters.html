@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>角色介紹 - 魔幻世界大冒險</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .character-card {
+      background: #fff;
+      padding: 15px;
+      width: 220px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .character-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(239, 35, 60, 0.6),
+                  0 0 15px rgba(239, 35, 60, 0.8);
+      border: 2px solid #ef233c;
+    }
+
+    .character-details {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background: #f8f8f8;
+      border-radius: 6px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .character-card.active .character-details {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 返回首頁按鈕 */
+    .back-btn {
+      display: inline-block;
+      margin: 15px 20px;
+      padding: 10px 20px;
+      background: #1f2937;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ef233c;
+    }
+  </style>
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav>
+    <h2 class="logo">GameWorld</h2>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="dlc.html">DLC 更新</a></li>
+      <li><a href="characters.html" class="active">角色介紹</a></li>
+      <li><a href="#contact">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+  <!-- 返回首頁按鈕 -->
+  <a href="index.html" class="back-btn">⬅ 返回首頁</a>
+
+  <!-- 角色介紹區 -->
+  <section class="content">
+    <h2>🎭 角色介紹</h2>
+    <p>點擊角色卡片可展開完整介紹</p>
+    <div class="character-container">
+      <div class="character-card">
+        <h3>勇者艾倫</h3>
+        <p>手持傳說之劍的冒險家。</p>
+        <div class="character-details">
+          <p>⚔️ <strong>背景故事：</strong> 年僅18歲便獲得傳說之劍的認可，曾擊退魔物軍隊保護村莊。</p>
+          <p>🔹 <strong>主要技能：</strong> 劍術連擊、防禦格擋、破空斬。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <h3>魔法師莉亞</h3>
+        <p>精通元素魔法的高階法師。</p>
+        <div class="character-details">
+          <p>🔥 <strong>背景故事：</strong> 古老魔法家族出身，能操控火焰、冰霜與雷電。</p>
+          <p>🔹 <strong>主要技能：</strong> 火焰風暴、冰霜結界、雷擊術。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <h3>神射手凱爾</h3>
+        <p>箭術精準無比的遠程狙擊手。</p>
+        <div class="character-details">
+          <p>🏹 <strong>背景故事：</strong> 曾一箭射下飛龍，被譽為「天空之矢」。</p>
+          <p>🔹 <strong>主要技能：</strong> 連環射擊、穿透箭矢、龍狩之矢。</p>
+        </div>
+      </div>
+
+      <div class="character-card">
+        <h3>刺客艾琳</h3>
+        <p>神秘的暗影殺手，身法極為敏捷。</p>
+        <div class="character-details">
+          <p>🗡️ <strong>背景故事：</strong> 隱藏於黑暗中，能瞬間消滅目標。</p>
+          <p>🔹 <strong>主要技能：</strong> 影步、毒刃、死亡突襲。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯絡資訊 -->
+  <section id="contact" class="content">
+    <h2>📩 聯絡我們</h2>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <a href="https://discord.com" target="_blank">Discord</a>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer>
+    <p>© 2025 未來遊戲開發團隊 | 版本 1.0.4</p>
+    <h4>📜 歷代版本</h4>
+    <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>🔹 版本 1.0.4 - 角色介紹獨立頁面、加入返回首頁按鈕</li>
+      <li>🔹 版本 1.0.3 - 角色卡片可展開詳細介紹</li>
+      <li>🔹 版本 1.0.2 - 新增角色「刺客艾琳」</li>
+      <li>🔹 版本 1.0.1 - 增加角色簡介、Hover 發光特效</li>
+      <li>🔹 版本 1.0 - 創造網站初始版本</li>
+    </ul>
+  </footer>
+
+  <script>
+    document.querySelectorAll(".character-card").forEach(card => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
