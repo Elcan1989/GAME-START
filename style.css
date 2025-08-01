@@ -60,35 +60,14 @@ nav ul li a.active {
   text-align: center;
 }
 
-.grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.card {
+.news-item, .dlc-card {
   background: white;
   padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
   border-radius: 8px;
-  width: 250px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.video-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#rating span {
-  font-size: 30px;
-  cursor: pointer;
-  color: #ccc;
-}
-
-#rating span.active {
-  color: gold;
+  text-align: left;
 }
 
 form {
@@ -115,47 +94,10 @@ button:hover {
   background: #374151;
 }
 
-#comment-list {
-  list-style: none;
-  padding: 0;
-}
-
-#comment-list li {
-  background: white;
-  padding: 10px;
-  margin: 5px 0;
-  border-radius: 5px;
-  text-align: left;
-}
-
 footer {
   background: #1f2937;
   color: white;
   text-align: center;
   padding: 10px;
   margin-top: 30px;
-}
-
-/* 浮動按鈕 */
-.floating-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ef233c;
-  color: white;
-  padding: 15px;
-  border-radius: 50px;
-  text-decoration: none;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
-}
-
-/* 手機版 */
-@media (max-width: 768px) {
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .video-container iframe {
-    width: 90%;
-  }
 }
