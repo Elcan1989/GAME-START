@@ -120,14 +120,23 @@
     </div>
   </section>
 
-  <!-- 聯絡資訊 -->
+<!-- 聯絡我們 -->
   <section id="contact" class="content">
     <h2>📩 聯絡我們</h2>
+
     <div class="social-links">
       <a href="https://facebook.com" target="_blank">Facebook</a>
       <a href="https://www.instagram.com/" target="_blank">Instagram</a>
       <a href="https://discord.com" target="_blank">Discord</a>
     </div>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="你的名字" required>
+      <input type="email" id="email" placeholder="你的 Email" required>
+      <textarea id="message" placeholder="留言內容" required></textarea>
+      <button type="submit">送出</button>
+    </form>
+    <p id="status"></p>
   </section>
 
   <!-- 頁尾 -->
