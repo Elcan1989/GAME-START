@@ -16,14 +16,12 @@
       cursor: pointer;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
     .character-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 12px rgba(239, 35, 60, 0.6),
                   0 0 15px rgba(239, 35, 60, 0.8);
       border: 2px solid #ef233c;
     }
-
     .character-details {
       display: none;
       margin-top: 10px;
@@ -33,18 +31,14 @@
       font-size: 14px;
       text-align: left;
     }
-
     .character-card.active .character-details {
       display: block;
       animation: fadeIn 0.3s ease-in-out;
     }
-
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-5px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* 返回首頁按鈕 */
     .back-btn {
       display: inline-block;
       margin: 15px 20px;
@@ -55,9 +49,21 @@
       border-radius: 5px;
       transition: background 0.3s ease;
     }
-
-    .back-btn:hover {
-      background: #ef233c;
+    .back-btn:hover { background: #ef233c; }
+    .category-title {
+      width: 100%;
+      text-align: left;
+      margin: 20px 0 10px 5%;
+      font-size: 20px;
+      color: #1f2937;
+      border-left: 5px solid #ef233c;
+      padding-left: 10px;
+    }
+    .character-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
   </style>
 </head>
@@ -80,6 +86,9 @@
   <section class="content">
     <h2>🎭 角色介紹</h2>
     <p>點擊角色卡片可展開完整介紹</p>
+
+    <!-- 戰士類 -->
+    <h3 class="category-title">⚔️ 近戰戰士</h3>
     <div class="character-container">
       <div class="character-card">
         <h3>勇者艾倫</h3>
@@ -89,7 +98,11 @@
           <p>🔹 <strong>主要技能：</strong> 劍術連擊、防禦格擋、破空斬。</p>
         </div>
       </div>
+    </div>
 
+    <!-- 法師類 -->
+    <h3 class="category-title">🪄 元素法師</h3>
+    <div class="character-container">
       <div class="character-card">
         <h3>魔法師莉亞</h3>
         <p>精通元素魔法的高階法師。</p>
@@ -98,7 +111,11 @@
           <p>🔹 <strong>主要技能：</strong> 火焰風暴、冰霜結界、雷擊術。</p>
         </div>
       </div>
+    </div>
 
+    <!-- 遠程射手 -->
+    <h3 class="category-title">🏹 遠程射手</h3>
+    <div class="character-container">
       <div class="character-card">
         <h3>神射手凱爾</h3>
         <p>箭術精準無比的遠程狙擊手。</p>
@@ -107,7 +124,11 @@
           <p>🔹 <strong>主要技能：</strong> 連環射擊、穿透箭矢、龍狩之矢。</p>
         </div>
       </div>
+    </div>
 
+    <!-- 刺客類 -->
+    <h3 class="category-title">🗡️ 暗影刺客</h3>
+    <div class="character-container">
       <div class="character-card">
         <h3>刺客艾琳</h3>
         <p>神秘的暗影殺手，身法極為敏捷。</p>
@@ -121,9 +142,10 @@
 
   <!-- 頁尾 -->
   <footer>
-    <p>© 2025 未來遊戲開發團隊 | 版本 1.0.5</p>
+    <p>© 2025 未來遊戲開發團隊 | 版本 1.0.6</p>
     <h4>📜 歷代版本</h4>
     <ul style="list-style: none; padding: 0; margin: 0;">
+      <li>🔹 版本 1.0.6 - 角色介紹新增分類系統</li>
       <li>🔹 版本 1.0.5 - 增加遊戲正式名稱</li>
       <li>🔹 版本 1.0.4 - 角色介紹獨立頁面、加入返回首頁按鈕</li>
       <li>🔹 版本 1.0.3 - 角色卡片可展開詳細介紹</li>
