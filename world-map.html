@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>世界觀地圖 - 王者傳奇：永恆之境</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      background-color: #f0f2f5;
+      color: #1f2937;
+    }
+    nav {
+      background-color: #1f2937;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: normal;
+    }
+    nav a:hover {
+      color: #ef233c;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 25px 0 10px;
+      font-size: 32px;
+      color: #ef233c;
+    }
+    .map-container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+    .map-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      border: 3px solid #ef233c;
+    }
+    .regions {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .region-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s ease;
+      cursor: default;
+    }
+    .region-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 15px rgba(239, 35, 60, 0.5);
+      border: 2px solid #ef233c;
+    }
+    .region-card h3 {
+      color: #ef233c;
+      margin-top: 0;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .region-card p {
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: #444;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 0 auto 40px;
+      padding: 12px 28px;
+      background: #1f2937;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      transition: background 0.3s ease;
+      width: fit-content;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .back-btn:hover {
+      background: #ef233c;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>王者傳奇：永恆之境</div>
+    <div>
+      <a href="index.html">首頁</a>
+      <a href="characters.html">角色介紹</a>
+      <a href="dlc.html">DLC 更新</a>
+      <a href="world-map.html" style="color:#ef233c; font-weight:bold;">世界觀地圖</a>
+    </div>
+  </nav>
+
+  <h1>🌍 世界觀地圖</h1>
+
+  <div class="map-container">
+    <img src="images/world_map.jpg" alt="王者傳奇世界地圖" />
+  </div>
+
+  <section class="regions">
+    <div class="region-card">
+      <h3>光明王國 - 艾斯特利亞</h3>
+      <p>
+        這裡是王國的首都與政治中心，廣闊的平原和豐饒的土地孕育出強大的軍隊與繁榮的經濟。
+        艾斯特利亞城堡聳立於山巔，是王族的象徵。
+      </p>
+    </div>
+
+    <div class="region-card">
+      <h3>幽暗森林 - 維爾達利亞</h3>
+      <p>
+        被濃密古樹包圍的神秘森林，棲息著各種魔物與精靈。傳說中存在通往異世界的隱藏入口。
+        冒險者需格外小心森林中的陷阱與迷霧。
+      </p>
+    </div>
+
+    <div class="region-card">
+      <h3>火焰山脈 - 烈焰峰</h3>
+      <p>
+        活躍的火山與熔岩河流交錯，這是熔岩巨人與火元素的領地。地形險峻，少有生物敢靠近。
+        只有最勇敢的冒險者敢挑戰這片火焰煉獄。
+      </p>
+    </div>
+
+    <div class="region-card">
+      <h3>冰霜荒原 - 霜寒凜冬</h3>
+      <p>
+        白雪覆蓋的無盡荒野，氣候嚴寒，居住著強悍的冰霜巨人與北境獸人。
+        傳說在這裡藏有古代冰龍的遺跡與寶藏。
+      </p>
+    </div>
+
+    <div class="region-card">
+      <h3>沙漠帝國 - 納克薩斯</h3>
+      <p>
+        一望無際的黃金沙海與古老遺跡，是強大沙漠帝國的疆域。這裡有許多沙漠魔物和古代詛咒。
+        冒險者可在此獲得珍稀寶物，但須提防流沙與沙暴。
+      </p>
+    </div>
+
+    <div class="region-card">
+      <h3>深淵海域 - 虛空海</h3>
+      <p>
+        黑暗的海域充滿神秘力量與海洋魔物，傳說深淵海底藏有失落的沉船與禁忌神器。
+        海盜與冒險家經常在此爭奪資源。
+      </p>
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="characters.html" class="back-btn">⬅ 返回角色介紹</a>
+  </div>
+
+</body>
+</html>
