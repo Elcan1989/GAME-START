@@ -12,6 +12,7 @@
       margin: 0;
     }
 
+    /* 導覽列 */
     nav {
       background: #1f2937;
       color: white;
@@ -36,18 +37,21 @@
       color: #ef233c;
     }
 
+    /* 標題區 */
     header {
       text-align: center;
-      padding: 50px 10px;
+      padding: 60px 10px;
       background: linear-gradient(to right, #1f2937, #3b82f6);
       color: white;
+      animation: fadeInDown 1s ease-out;
     }
 
+    /* 團隊展示區 */
     .team-section {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
       padding: 40px 20px;
     }
 
@@ -58,12 +62,22 @@
       width: 240px;
       padding: 20px;
       text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fadeUp 0.8s ease forwards;
     }
 
+    /* 延遲出現效果 */
+    .staff-card:nth-child(1) { animation-delay: 0.2s; }
+    .staff-card:nth-child(2) { animation-delay: 0.4s; }
+    .staff-card:nth-child(3) { animation-delay: 0.6s; }
+    .staff-card:nth-child(4) { animation-delay: 0.8s; }
+    .staff-card:nth-child(5) { animation-delay: 1s; }
+
     .staff-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-5px) scale(1.05);
       box-shadow: 0 6px 15px rgba(239, 35, 60, 0.4);
+      transition: all 0.3s ease;
     }
 
     .staff-card img {
@@ -73,6 +87,11 @@
       object-fit: cover;
       border: 3px solid #ef233c;
       margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .staff-card:hover img {
+      transform: rotate(-3deg) scale(1.1);
     }
 
     .staff-role {
@@ -86,6 +105,35 @@
       background: #1f2937;
       color: white;
       padding: 20px;
+    }
+
+    /* 動畫效果 */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .staff-card {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -104,47 +152,47 @@
     </ul>
   </nav>
 
-  <!-- 標題區 -->
+  <!-- 標題 -->
   <header>
-    <h1>👑 製作人員名單</h1>
-    <p>感謝所有投入《王者傳奇：永恆之境》製作的夥伴！</p>
+    <h1>🎬 製作人員名單</h1>
+    <p>感謝所有開發與創作成員的熱血與付出</p>
   </header>
 
-  <!-- 製作人員卡片 -->
+  <!-- 團隊展示 -->
   <section class="team-section">
     <div class="staff-card">
       <img src="images/director.jpg" alt="遊戲總監">
-      <h3>elcan19890604</h3>
+      <h3>19890604</h3>
       <p class="staff-role">遊戲總監 / 劇情統籌</p>
-      <p>負責世界觀設定與主線任務架構。</p>
+      <p>打造世界觀與主線任務架構。</p>
     </div>
 
     <div class="staff-card">
       <img src="images/lia.jpg" alt="美術總監">
       <h3>chatgpt</h3>
       <p class="staff-role">美術總監</p>
-      <p>負責角色立繪與場景設計。</p>
+      <p>角色立繪、場景與 UI 設計。</p>
     </div>
 
     <div class="staff-card">
       <img src="images/kale.jpg" alt="音樂製作">
-      </h3>Elcan1989</h3>
+      <h3>Elcan1989</h3>
       <p class="staff-role">音樂製作</p>
-      <p>創作戰鬥與劇情配樂，強化氛圍體驗。</p>
+      <p>配樂設計、戰鬥與劇情氣氛營造。</p>
     </div>
 
     <div class="staff-card">
       <img src="images/erin.jpg" alt="系統設計">
       <h3>dxjh1989</h3>
       <p class="staff-role">系統設計 / 遊戲平衡</p>
-      <p>負責戰鬥數值與裝備系統規劃。</p>
+      <p>規劃技能與裝備系統，維持遊戲平衡。</p>
     </div>
 
     <div class="staff-card">
-      <img src="images/yukai.jpg" alt="程式設計師">
+      <img src="images/yukai.jpg" alt="主程式設計">
       <h3>Elcan1989</h3>
       <p class="staff-role">主程式設計</p>
-      <p>核心邏輯、資料保存、戰鬥演算法開發。</p>
+      <p>核心邏輯、儲存系統、戰鬥演算法開發。</p>
     </div>
   </section>
 
@@ -168,8 +216,6 @@
 
 </body>
 </html>
-
-
 
 
 
