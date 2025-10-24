@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DLC 更新 - 王者傳奇：永恆之境</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 導覽列 -->
+  <nav>
+    <h2 class="logo">王者傳奇：永恆之境</h2>
+    <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="dlc.html" class="active">DLC 更新</a></li>
+      <li><a href="characters.html">角色介紹</a></li>
+    </ul>
+  </nav>
